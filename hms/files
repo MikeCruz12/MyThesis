@@ -1,0 +1,15 @@
+files
+
+id 1
+filename test.pdf
+filepath storage/test.pff
+register_id 1
+
+id 2
+filename test2.pdf
+filepath storage/test2.pff
+register_id 1
+
+
+SELECT * from register
+LEFT JOIN files.register_id == register.id
